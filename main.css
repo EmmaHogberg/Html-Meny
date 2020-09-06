@@ -34,13 +34,13 @@ header h1 {
 
 h2 {
 	margin: 50px 0px 10px 0px;
-	font-size: 20px;
+	font-size: 30px;
 	font-style: italic;
 	text-align: center;
 }
 
 h3 {
-	margin: 10px 0px;
+	margin: 10px 0px 40px 0px;
 	font-size: 40px;
 	font-style: normal;
 	text-align: center;
@@ -96,14 +96,14 @@ section.meny ol {
 
 
 div.box {
-	width: 800px;
-	margin: auto;
+	display: flex;
+	justify-content: center;
 }
 
 section.tredelad {
 	float: left;
 	width: 250px;
-	margin: 1%;
+	margin: 10px;
 }
 
 section.botten {
@@ -121,3 +121,67 @@ section.topping {
 }
 
 
+
+
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	width: 10%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+
+footer h3 {
+	font-size: 20px;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+}
+
+.foot-box {
+	float: left;
+	width: 33,33%;
+	margin: 10px;
+	background-color: #ef5350;
+}
