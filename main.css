@@ -8,6 +8,7 @@ header {
   background-image: url(img/vegetables-1499906.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -22,7 +23,7 @@ header {
 /* Text på startsidan */
 
 header h1 {
-  margin: 20px 35%;
+  margin: 20px 25%;
   background-color: rgba(255, 249, 196, 0.6);
   background-size: auto;
   font-size: 60px;
@@ -30,8 +31,8 @@ header h1 {
 }
 
 .ring h2 {
-  margin: 50px 0px 10px 0px;
-  font-size: 30px;
+  margin: 40px;
+  font-size: 40px;
   font-style: italic;
   text-align: center;
 }
@@ -87,39 +88,6 @@ section.meny p {
   margin-bottom: 40px;
 }
 
-section.meny h4 {
-  margin: 40px 40px 10px 40px;
-  font-size: 20px;
-}
-
-section.meny ol {
-  margin: 0px 40px 20px 40px;
-  line-height: 200%;
-}
-
-div.box {
-  display: flex;
-  justify-content: center;
-}
-
-section.tredelad {
-  margin: 10px;
-  float: left;
-  width: 250px;
-}
-
-section.botten {
-  background-color: #ffd54f;
-}
-
-section.fyllning {
-  background-color: #ffb74d;
-}
-
-section.topping {
-  background-color: #aed581;
-}
-
 /* Bildspel till startsidan */
 
 #slider {
@@ -169,17 +137,22 @@ section.topping {
 
 /* Footer till alla sidor */
 
-div.footcontainer {
+/* div.footcontainer {
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+} */
+
+footer {
+  background-color: #a5d6a7;
   display: flex;
   justify-content: center;
 }
 
-section.foot-box {
+.foot-box {
   float: left;
   width: 33.33%;
   padding-bottom: 30px;
-  /* background-color: #ef5350; */
   background-color: #a5d6a7;
   text-align: center;
   font-size: 18px;
@@ -191,7 +164,7 @@ footer h3 {
   font-size: 24px;
 }
 
-/* Gallery-meny */
+/* Gallery-menu */
 
 div.gallery {
   border: 1px solid #ccc;
@@ -231,10 +204,16 @@ div.desc {
     width: 49.99999%;
     margin: 6px 0;
   }
+  .foot-box {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   .responsive {
+    width: 100%;
+  }
+  .foot-box {
     width: 100%;
   }
 }
@@ -243,4 +222,13 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Parallax scrolling som jag inte hann med - om oss */
+
+section.oss h1 {
+  margin: 40px;
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
 }
